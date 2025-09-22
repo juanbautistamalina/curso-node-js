@@ -13,4 +13,4 @@ process.on("exit", () => {
 console.log("cwd: ", process.cwd());
 
 // platform
-console.log(process.env.NO)
+console.log(process.env.OS)
