@@ -1,0 +1,42 @@
+# Dependencias
+node_modules/
+
+# Build
+dist/
+build/
+
+# Archivos de logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Configuración del sistema
+.DS_Store
+Thumbs.db
+
+# Variables de entorno
+.env
+.env.local
+.env.*.local
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Test coverage
+coverage/
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Cache
+.cache/
+.next/
+out/
+
+# Carpeta personalizada
+academia-x/
