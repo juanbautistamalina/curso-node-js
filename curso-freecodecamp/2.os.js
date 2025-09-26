@@ -1,3 +1,4 @@
+// Módulo os
 const os = require("node:os");
 
 // tipo de os
@@ -10,4 +11,4 @@ console.log(os.homedir());
 console.log(os.uptime());
 
 // información del usuario
-console.log(os.userInfo())
+console.log(os.userInfo());

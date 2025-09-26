@@ -1,3 +1,4 @@
+// Módulo fs (file system)
 const fs = require("node:fs");
 
 // Leer un archivo (asíncrono)
