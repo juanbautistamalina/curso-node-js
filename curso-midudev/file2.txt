@@ -1,2 +1,0 @@
-Esto es texto de prueba para
-probar la asincronía en NodeJS

@@ -1,4 +1,5 @@
-const fs = require("node:fs"); // A partir de Node 16, se recomienda poner node:
+// A partir de Node 16, se recomienda poner "node:" en las importaciones
+const fs = require("node:fs"); 
 
 const stats = fs.statSync("./file.txt");
 console.log(

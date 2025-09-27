@@ -1,4 +1,4 @@
-const pelicula = require("./5.pelicula.json");
+const pelicula = require("./pelicula.json");
 
 console.log(pelicula);
 console.log(typeof pelicula); // object
