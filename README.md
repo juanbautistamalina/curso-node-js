@@ -43,12 +43,12 @@ El objetivo es consolidar conocimientos básicos e intermedios de Node.js y crea
 - [x] `path` → rutas de archivos y directorios  
 - [x] `os` → información del sistema operativo  
 - [x] `timers` → `setTimeout`, `setInterval`, `setImmediate`  
-- [ ] `http` → crear servidores básicos  
+- [x] `http` → crear servidores básicos  
 
 ### npm  
-- [ ] Uso de `npm init` y `package.json`  
-- [ ] Instalación y desinstalación de paquetes  
-- [ ] Dependencias y `node_modules`  
+- [x] Uso de `npm init` y `package.json`  
+- [x] Instalación y desinstalación de paquetes  
+- [x] Dependencias y `node_modules`  
 
 ### Proyecto práctico  
 - [ ] Crear un servidor HTTP básico  
