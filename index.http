@@ -1,1 +1,10 @@
-POST http://localhost:3000/
+GET http://localhost:3000/
+
+###
+
+POST http://localhost:3000/contact
+Content-Type: "application/json"
+
+{
+    "key": "value"
+}
