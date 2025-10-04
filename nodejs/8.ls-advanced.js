@@ -1,5 +1,6 @@
 const fs = require("node:fs/promises");
 const path = require("node:path");
+const pc = require("picocolors");
 
 // tomar la carpeta de los argumentos o usar la actual
 const folder = process.argv[2] ?? ".";
@@ -11,7 +12,7 @@ async function ls(folder) {
     // leer el contenido del directorio -> [archivo1, archivo2, ...]
     files = await fs.readdir(folder);
   } catch {
-    console.error(`No se pudo leer el directorio: ${folder}`);
+    console.error(pc.red(`❌ No se pudo leer el directorio: ${folder}`));
     process.exit(1);
   }
 
@@ -31,7 +32,7 @@ async function ls(folder) {
     const fileSize = stats.size.toString();
     const fileModified = stats.mtime.toLocaleString();
 
-    return `${fileType} ${file.padEnd(20)} ${fileSize.padStart(10)} ${fileModified}`;
+    return `${fileType} ${pc.blue(file.padEnd(20))} ${pc.green(fileSize.padStart(10))} ${pc.yellow(fileModified)}`;
   });
 
   // filesInfo es un array de strings con la info de cada archivo.
