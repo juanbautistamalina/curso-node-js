@@ -22,11 +22,12 @@
   },
   "homepage": "https://github.com/juanbautistamalina/curso-node-js#readme",
   "dependencies": {
+    "express": "^5.1.0",
     "picocolors": "1.1.1"
   },
   "devDependencies": {
     "standard": "17.1.2"
-  }, 
+  },
   "esLintConfig": {
     "extends": "standard"
   }
