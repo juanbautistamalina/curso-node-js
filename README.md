@@ -179,11 +179,11 @@ app.listen(3000, () => console.log("Servidor Express en http://localhost:3000"))
 - [x] Dependencias y `node_modules`
 
 ### Express.js (introducción)
-- [ ] ¿Qué es Express.js?
-- [ ] Crear un servidor con Express
+- [x] ¿Qué es Express.js?
+- [x] Crear un servidor con Express
 - [ ] Rutas y middleware
-- [ ] Manejo de peticiones y respuestas
-- [ ] Proyecto básico con Express
+- [x] Manejo de peticiones y respuestas
+- [x] Proyecto básico con Express
 
 ### Proyecto práctico
 - [ ] Crear un servidor HTTP básico
