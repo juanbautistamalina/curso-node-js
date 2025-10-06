@@ -1,0 +1,24 @@
+### Extensión Recomendada: REST Client (Huachao Mao)
+
+### Inicio
+GET http://localhost:1234/
+
+### Recuperar información del pokemon Ditto
+GET http://localhost:1234/pokemon/ditto
+
+
+### Para crear un Pokemon
+POST http://localhost:1234/pokemon
+Content-Type: application/json
+
+{
+    "name": "ditto",
+    "type": "normal",
+    "moves": [
+        "transform"
+    ]
+}
+
+###
+
+PUT http://localhost:1234/pokemon/ditto
