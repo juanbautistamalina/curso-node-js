@@ -1,10 +1,13 @@
+<p align="center">
+  <img src="./assets/banner-node-course.png" alt="Logo" width="500"/>
+</p>
+
 # 📘 Node.js - Aprendizaje y Prácticas
 
 Este repositorio contiene mis apuntes, ejercicios y proyectos prácticos realizados durante el aprendizaje de **Node.js** a través de cursos en YouTube y otros recursos.
 
 El objetivo es consolidar conocimientos básicos e intermedios de Node.js y crear una base sólida para trabajar en proyectos reales.
 
----
 
 ## 🚀 ¿Qué es Node.js?
 
@@ -18,7 +21,7 @@ El objetivo es consolidar conocimientos básicos e intermedios de Node.js y crea
 - **Multiplataforma** → funciona en servidores, terminal y dispositivos IoT.
 - **NPM integrado** → acceso al mayor ecosistema de paquetes.
 
----
+
 
 ## 📂 Contenido del repositorio
 
@@ -26,7 +29,7 @@ El objetivo es consolidar conocimientos básicos e intermedios de Node.js y crea
 - `express/` → introducción a Express.js
 - `ejercicios/` → pequeños scripts y pruebas de conceptos
 
----
+
 
 ## 📖 Documentación esencial
 
@@ -38,7 +41,7 @@ node
 4
 ```
 
----
+
 
 ### 🌍 Variables globales
 ```js
@@ -47,7 +50,7 @@ console.log(__dirname);  // ruta del directorio actual
 console.log(__filename); // ruta del archivo actual
 ```
 
----
+
 
 ### 📦 Módulos
 
@@ -76,7 +79,7 @@ import { sum } from "./sum.mjs";
 console.log(sum(2, 3));
 ```
 
----
+
 
 ### ⚡ Eventos y EventEmitter
 ```js
@@ -90,7 +93,7 @@ emitter.on("saludo", (msg) => {
 emitter.emit("saludo", "Mundo");
 ```
 
----
+
 
 ### 🔧 Módulo `process`
 ```js
@@ -102,7 +105,7 @@ process.stdin.on("data", (data) => {
 });
 ```
 
----
+
 
 ### 📂 Módulo `fs`
 ```js
@@ -116,7 +119,7 @@ const contenido = fs.readFileSync("archivo.txt", "utf-8");
 console.log(contenido);
 ```
 
----
+
 
 ### 🌐 Módulo `http`
 ```js
@@ -132,7 +135,7 @@ server.listen(3000, "127.0.0.1", () => {
 });
 ```
 
----
+
 
 ### 📦 npm básico
 ```bash
@@ -141,7 +144,7 @@ npm install express  # instalar paquete
 npm uninstall express # desinstalar paquete
 ```
 
----
+
 
 ### 🚏 Routing básico con Express
 ```js
@@ -154,7 +157,7 @@ app.get("/about", (req, res) => res.send("Acerca de nosotros"));
 app.listen(3000, () => console.log("Servidor Express en http://localhost:3000"));
 ```
 
----
+
 
 ## 🛣️ Roadmap de aprendizaje
 
@@ -192,7 +195,7 @@ app.listen(3000, () => console.log("Servidor Express en http://localhost:3000"))
 - [ ] Simular una CLI sencilla con `process`
 - [ ] Proyecto integrador con Node.js
 
----
+
 
 ## 🔗 Recursos útiles
 
@@ -202,7 +205,7 @@ app.listen(3000, () => console.log("Servidor Express en http://localhost:3000"))
 - [Express - Framework web para Node.js](https://www.npmjs.com/package/express)
 - [Nodemon - Herramienta para reiniciar aplicaciones Node.js automáticamente](https://www.npmjs.com/package/nodemon)
 
----
+
 
 ## 🎯 Objetivo personal
 
