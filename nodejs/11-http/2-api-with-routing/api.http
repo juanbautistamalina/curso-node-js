@@ -1,0 +1,18 @@
+### Recuperar información del pokemon Ditto
+GET http://localhost:1234/pokemon/ditto
+
+### Pare crear un Pokemon
+POST http://localhost:1234/pokemon
+Content-Type: application/json
+
+{
+    "name": "ditto",
+    "type": "normal",
+    "moves": [
+        "transform"
+    ]
+}
+
+###
+
+PUT http://localhost:1234/pokemon/ditto
