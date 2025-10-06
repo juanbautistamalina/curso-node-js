@@ -1,3 +1,5 @@
+### Extensión Recomendada: REST Client (Huachao Mao)
+
 ### Recuperar información del pokemon Ditto
 GET http://localhost:1234/pokemon/ditto
 
