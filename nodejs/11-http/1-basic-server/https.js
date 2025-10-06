@@ -32,7 +32,7 @@ const server = http.createServer((req, res) => {
 
 
 
-server.listen(PORT, () => {
+server.listen(PORT, HOST, () => {
   console.log(`server listening on port http://${HOST}:${PORT}`);
 });
 
