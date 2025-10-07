@@ -7,17 +7,28 @@ app.disable("x-powered-by"); // desactivar por motivos de seguridad (opcional)
 const PORT = process.env.PORT ?? 1234;
 
 // Middleware es una función que se ejecuta entre la petición y la respuesta
+
+app.use(express.json())
+
 // app.use((req, res, next) => {
-//   console.log("mi primer middleware");
-//   // trackear la request a la base de datos
-//   // revisar si el usuario tiene cookies
-//   next();
+//   if (req.method !== "POST") return next();
+//   if (req.headers["content-type"] !== "application/json") return next();
+
+//   // solo llegan request que son POST y que tienen el header Content-Type; application/json.
+
+//   let body = "";
+
+//   req.on("data", (chunk) => {
+//     body += chunk.toString();
+//   });
+
+//   req.on("end", () => {
+//     const data = JSON.parse(body);
+//     // mutar la request y meter la información en el req.body
+//     req.body = data;
+//     next();
+//   });
 // });
-
-app.use((req, res, next) => {
-
-})
-
 
 app.get("/", (req, res) => {
   // express detecta automáticamente el content-type, dependiendo de la respuesta
@@ -29,16 +40,7 @@ app.get("/pokemon/ditto", (req, res) => {
 });
 
 app.post("/pokemon", (req, res) => {
-  let body = "";
-
-  req.on("data", (chunk) => {
-    body += chunk.toString();
-  });
-
-  req.on("end", () => {
-    const data = JSON.parse(body);
-    res.status(201).json(data);
-  });
+  res.status(201).json(req.body);
 });
 
 // Para cualquier otro no contemplado (siempre colocar al final)
